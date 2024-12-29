@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Murecho:wght@100..900&display=swap');
+
+:root{
+    --familia-principal: "Freeman", serif;
+    --familia-secundaria: "Murecho", serif;
+}
+
+h1{
+    font-family: var(--familia-principal);
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.5rem;
+    color: black;
+    font-size: 6rem;
+    padding-top: 100px;
+}
+
+body {
+    background-color: #E7EFE6;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item{
+    color: black;
+
+}
+
+p{
+    color: black; /* Cambia el color del enlace dentro del <li> */
+    font-family: var(--familia-secundaria);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.nav-item .nav-link {
+    color: black; /* Cambia el color del enlace dentro del <li> */
+    font-family: var(--familia-secundaria);
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.nav-item .nav-link:hover {
+    color: #16A085; /* Cambia el color del enlace al pasar el mouse */
+}
+
+.nav-bar{
+    border-bottom: 2px solid rgba(189, 195, 199,.2);
+    background-color: #C3D7C1;
+}
+
+img {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#drop-zone {
+    margin-top: 50px;
+    border: #ff4d4d;
+    height: 80vh;
+    width: 100vw;
+  }
+
+#drop-zone.dragover {
+    height: 80vh;
+    width: 100vw;
+    background-color: rgba(255, 230, 230,0.3);
+    border: 2px dashed #ff4d4d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+i{
+    padding-right: 15px;
+}
